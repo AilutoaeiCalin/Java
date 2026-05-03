@@ -2,6 +2,7 @@ package model;
 
 import java.io.Serializable;
 
+
 public class Cell implements Serializable {
     private final int row;
     private final int col;
@@ -58,5 +59,23 @@ public class Cell implements Serializable {
 
     public void setLeftWall(boolean leftWall) {
         this.leftWall = leftWall;
+    }
+
+    public boolean hasWall(Direction direction) {
+        return switch (direction) {
+            case TOP -> topWall;
+            case RIGHT -> rightWall;
+            case BOTTOM -> bottomWall;
+            case LEFT -> leftWall;
+        };
+    }
+
+    public void setWall(Direction direction, boolean value) {
+        switch (direction) {
+            case TOP -> topWall = value;
+            case RIGHT -> rightWall = value;
+            case BOTTOM -> bottomWall = value;
+            case LEFT -> leftWall = value;
+        }
     }
 }

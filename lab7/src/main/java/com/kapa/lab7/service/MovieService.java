@@ -1,11 +1,11 @@
 package com.kapa.lab7.service;
+
 import com.kapa.lab7.dao.MovieDAO;
-import com.kapa.lab7.model.Movie;
-import org.springframework.stereotype.Service;
 import com.kapa.lab7.dto.MovieRequest;
 import com.kapa.lab7.dto.ScorePatchRequest;
 import com.kapa.lab7.exception.ResourceNotFoundException;
-
+import com.kapa.lab7.model.Movie;
+import org.springframework.stereotype.Service;
 
 import java.sql.Date;
 import java.sql.SQLException;
