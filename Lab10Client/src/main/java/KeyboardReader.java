@@ -13,7 +13,7 @@ public class KeyboardReader implements Runnable {
     @Override
     public void run() {
         try (
-                BufferedReader keyboard = new BufferedReader(new InputStreamReader(System.in))) {
+                BufferedReader keyboard = new BufferedReader(new InputStreamReader(System.in)))  {
             String command;
 
             while ((command = keyboard.readLine()) != null) {

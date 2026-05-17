@@ -77,7 +77,6 @@ public class Maze implements Serializable {
             cells[row][col - 1].setRightWall(newValue);
         }
     }
-
     public void resetAllWalls() {
         for (int i = 0; i < rows; i++) {
             for (int j = 0; j < cols; j++) {
@@ -89,7 +88,6 @@ public class Maze implements Serializable {
             }
         }
     }
-
     public void randomlyRemoveWalls() {
         resetAllWalls();
         Random random = new Random();

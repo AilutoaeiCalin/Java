@@ -1,3 +1,7 @@
+package repository;
+
+import model.Question;
+
 import java.io.*;
 import java.util.*;
 

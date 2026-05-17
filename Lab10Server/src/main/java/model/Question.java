@@ -1,3 +1,5 @@
+package model;
+
 public class Question {
     private final String text;
     private final String correctAnswer;

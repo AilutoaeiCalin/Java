@@ -1,0 +1,30 @@
+<persistence xmlns="https://jakarta.ee/xml/ns/persistence"
+             version="3.0">
+
+    <persistence-unit name="quiz">
+        <class>entity.GameResult</class>
+
+        <properties>
+            <property name="jakarta.persistence.jdbc.driver"
+                      value="oracle.jdbc.OracleDriver"/>
+
+            <property name="jakarta.persistence.jdbc.url"
+                      value="jdbc:oracle:thin:@localhost:1521:XE"/>
+
+            <property name="jakarta.persistence.jdbc.user"
+                      value="movies"/>
+
+            <property name="jakarta.persistence.jdbc.password"
+                      value="movies"/>
+
+            <property name="hibernate.dialect"
+                      value="org.hibernate.dialect.OracleDialect"/>
+
+            <property name="hibernate.hbm2ddl.auto"
+                      value="validate"/>
+
+            <property name="hibernate.show_sql"
+                      value="true"/>
+        </properties>
+    </persistence-unit>
+</persistence>
